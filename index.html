@@ -1,95 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HOME</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>HOME</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+          integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+          rel="stylesheet"/>
 
-  <link rel="stylesheet" href="stile.css">
+    <link href="stile.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css" integrity="sha512-ztsAq/T5Mif7onFaDEa5wsi2yyDn5ygdVwSSQ4iok5BPJQGYz1CoXWZSA7OgwGWrxrSrbF0K85PD5uLpimu4eQ==" crossorigin="anonymous" />
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css"
+          integrity="sha512-ztsAq/T5Mif7onFaDEa5wsi2yyDn5ygdVwSSQ4iok5BPJQGYz1CoXWZSA7OgwGWrxrSrbF0K85PD5uLpimu4eQ=="
+          rel="stylesheet"/>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
 <div class="header">
-  <div class="logo">
-    <img src="logo.png" alt="">
-  </div>
-  <ul class="menu">
-    <!--<li><a href="">Home</a></li>-->
-    <!--<li><a href="">Single</a></li>-->
-    <!--<li><a href="">Contact</a></li>-->
-  </ul>
-  <div class="cta">
-    <!--<a href="" class="button"> Contatti</a>-->
-  </div>
+    <div class="logo">
+        <img alt="" src="logo.png">
+    </div>
+    <ul class="menu">
+        <!--<li><a href="">Home</a></li>-->
+        <!--<li><a href="">Single</a></li>-->
+        <!--<li><a href="">Contact</a></li>-->
+    </ul>
+    <div class="cta">
+        <!--<a href="" class="button"> Contatti</a>-->
+    </div>
 </div>
 <div class="hamburger">
-  <span></span>
-  <span></span>
-  <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
 </div>
 
 <div class="hero">
-  <div class="hero__content">
-    <p class="intro-text">Dispense, appunti e altro...</p>
-    <h1 class="big-text">Home Page</h1>
-    <!--<a href="" class="button">Discover More</a>-->
-  </div>
+    <div class="hero__content">
+        <p class="intro-text">Dispense, appunti e altro...</p>
+        <!-- TODO: Mettere un titolo figo nella home page -->
+        <h1 class="big-text">Home Page</h1>
+        <!--<a href=""  class="button">Discover More</a>-->
+    </div>
 </div>
 
 <div class="grid mt-3">
-  <div class="col">
-    <h3 class="big-text">Materie</br>Scolastiche</h3>
-  </div>
-  <div class="col">
-    <p class="mt-2"><h3 class="med-text">Selezionare una materia per aprire una
-       pagina la quale fornirà ulteriori dettagli sulla materia stessa
-        quali ad esempio appunti e spiegazioni presi da altre fonti
-        e/o spiegate da me, inoltre è possibile trovare una sezione
-        sui metodi di studio e su tecniche varie (tipo tecniche mnemoniche...), quest'ultime però verranno aggiunte dopo: work in progress, coming soon...</h3></p>
-  </div>
+    <div class="col">
+        <h3 class="big-text">Materie<br/>Scolastiche</h3>
+    </div>
+    <div class="col">
+        <p class="mt-2">
+        <h3 class="med-text">Selezionare una materia per aprire una
+            pagina la quale fornirà ulteriori dettagli sulla materia stessa
+            quali ad esempio appunti e spiegazioni presi da altre fonti
+            e/o spiegate da me, inoltre è possibile trovare una sezione
+            sui metodi di studio e su tecniche varie (tipo tecniche mnemoniche...), quest'ultime però verranno aggiunte
+            dopo: work in progress, coming soon...</h3></p>
+    </div>
 </div>
-
 
 
 <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
-  <div class="carousel-cell"><h3 class="med-text"><a href="materie/anatomia/indice argomenti/anatomia.html">anatomia</a></h2></div>
-  <div class="carousel-cell"><h3 class="med-text"><a href="materie/chimica-analitica">chimica anal</a></h2></div>
-  <div class="carousel-cell"><h3 class="med-text"><a href="materie/chimica organica/indice argomenti/chimica-organica.html">chimica org</a></h2></div>
-  <div class="carousel-cell"><h3 class="med-text"><a href="materie/educazione-fisica-motoria">motoria</a></h2></div>
-  <div class="carousel-cell"><h3 class="med-text"><a href="materie/inglese">inglese</a></h2></div>
-  <div class="carousel-cell"><h3 class="med-text"><a href="materie/letteratura">letteratura</a></h2></div>
-  <div class="carousel-cell"><h3 class="med-text"><a href="materie/storia">storia</a></h2></div>
-  <div class="carousel-cell"><h3 class="med-text"><a href="materie/matematica">matematica</a></h2></div>
-  <div class="carousel-cell"><h3 class="med-text"><a href="materie/microbiologia">microbiologia</a></h2></div>
-  <div class="carousel-cell"><h3 class="med-text"><a href="materie/religione">religione</a></h2></div>
+    <div class="carousel-cell"><h3 class="med-text"><a
+            href="materie/anatomia/indice argomenti/anatomia.html">anatomia</a></h3></div>
+    <div class="carousel-cell"><h3 class="med-text"><a href="materie/chimica-analitica">chimica anal</a></h3></div>
+    <div class="carousel-cell"><h3 class="med-text"><a
+            href="materie/chimica organica/indice argomenti/chimica-organica.html">chimica org</a></h3></div>
+    <div class="carousel-cell"><h3 class="med-text"><a href="materie/educazione-fisica-motoria">motoria</a></h3></div>
+    <div class="carousel-cell"><h3 class="med-text"><a href="materie/inglese">inglese</a></h3></div>
+    <div class="carousel-cell"><h3 class="med-text"><a href="materie/letteratura">letteratura</a></h3></div>
+    <div class="carousel-cell"><h3 class="med-text"><a href="materie/storia">storia</a></h3></div>
+    <div class="carousel-cell"><h3 class="med-text"><a href="materie/matematica">matematica</a></h3></div>
+    <div class="carousel-cell"><h3 class="med-text"><a href="materie/microbiologia">microbiologia</a></h3></div>
+    <div class="carousel-cell"><h3 class="med-text"><a href="materie/religione">religione</a></h3></div>
 </div>
-
-
 
 
 <!-- Jquery -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js" integrity="sha512-Nx/M3T/fWprNarYOrnl+gfWZ25YlZtSNmhjHeC0+2gCtyAdDFXqaORJBj1dC427zt3z/HwkUpPX+cxzonjUgrA==" crossorigin="anonymous"></script>
+<script crossorigin="anonymous"
+        integrity="sha512-Nx/M3T/fWprNarYOrnl+gfWZ25YlZtSNmhjHeC0+2gCtyAdDFXqaORJBj1dC427zt3z/HwkUpPX+cxzonjUgrA=="
+        src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
 
 <script>
-  $( document ).ready(function() {
+    $(document).ready(function () {
 
-    /* Open Panel */
-    $( ".hamburger" ).on('click', function() {
-      $(".menu").toggleClass("menu--open");
+        /* Open Panel */
+        $(".hamburger").on('click', function () {
+            $(".menu").toggleClass("menu--open");
+        });
+
     });
-
-  });
 </script>
 
 </body>

@@ -160,11 +160,12 @@ h1, h2, h3, h4, h5 p{color: #000; padding-bottom: 30px}
 }
 
 .box {
-  background-color: pink;
+  background-color: #fff;
   height: 2rem;
   margin: 0.5rem;
 }
 
+.titolo-colonna-teoria{margin-left: 25%}
 
 /* ! colore numeri */
 
