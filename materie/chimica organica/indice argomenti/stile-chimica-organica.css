@@ -45,6 +45,9 @@ h1, h2, h3, h4, h5 p{color: #000; padding-bottom: 30px}
   background-size: cover;
 }
 
+
+/* ! hero content */
+
 .hero__content{
   width: 100%;
   max-width: 1350px;
@@ -56,6 +59,8 @@ h1, h2, h3, h4, h5 p{color: #000; padding-bottom: 30px}
 .hero__content h1,
 .hero__content p{color: #fff;}
 
+
+/* ! menu nav bar */
 
 /* Add a black background color to the top navigation */
 .menu {
@@ -88,83 +93,21 @@ h1, h2, h3, h4, h5 p{color: #000; padding-bottom: 30px}
 
 
 /* ! Grid System */
-/*
-.grid{display: flex; max-width: 1350px; padding: 0 30px; margin: 0 auto; border: 1px solid red;}
-.grid .col{width: 100%}
 
-@media (max-width: 768px) {
-  .grid{flex-wrap: wrap;}
-}
-*/
+/* ! tabella */
 
 
 
-/* ! griglia */
 
-.grid{
-  box-sizing: border-box;
-  display: flex;
-  float: none;
-  line-height: 35px;
-  position: static;
-  z-index: auto;
-  text-align: left;
-  max-width: 1350px;
-  padding: 0 30px;
-  margin: 0 auto;
-  border: 1px solid red;
-}
-
-.grid .colonna-laboratorio{width: 100%}
-.grid .colonna-teoria{width: 100%}
-
-.grid .colonna-teoria .span{text-align: center;}
-/*.colonna-laboratorio{text-align: center;}*/
-/*.colonna-teoria .med-text{text-align: center;}*/
+  /* ! griglia */
 
 
-/* ! box */
-
-* {
-  box-sizing: border-box
-}
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
-  grid-column-gap: 0.5rem;
-  overflow: hidden;
-  position: relative;
-}
-
-.item {
-  position: relative;
-}
-
-.item:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -0.25rem;
-  height: 100vh;
-  width: 1px;
-  background: black;
-}
-
-.box {
-  background-color: #fff;
-  height: 2rem;
-  margin: 0.5rem;
-}
-
-.titolo-colonna-teoria{margin-left: 25%}
-
-.lezione1:before{text-align: center}
+  /* ! box */
 
 
 /* ! colore numeri */
 
-#lezione1 a span{
+#lezione1 a span {
   color: red;
 }
 #lezione2 a span{
@@ -193,12 +136,16 @@ h1, h2, h3, h4, h5 p{color: #000; padding-bottom: 30px}
 }
 
 
+
+
+
 /* ! helpers */
 
 .mt-1{margin-top: 50px;}
 .mt-2{margin-top: 100px;}
 .mt-3{margin-top: 150px;}
 .tw{color: #fff}
+
 
 
 *,
