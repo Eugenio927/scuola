@@ -102,6 +102,13 @@ h1, h2, h3, h4, h5 p{color: #000; padding-bottom: 30px}
 }
 */
 
+
+
+
+
+
+/* ! griglia */
+
 .grid{
   box-sizing: border-box;
   display: flex;
@@ -110,7 +117,56 @@ h1, h2, h3, h4, h5 p{color: #000; padding-bottom: 30px}
   position: static;
   z-index: auto;
   text-align: left;
+  max-width: 1350px;
+  padding: 0 30px;
+  margin: 0 auto;
+  border: 1px solid red;
 }
+
+.grid .colonna-laboratorio{width: 100%}
+.grid .colonna-teoria{width: 100%}
+
+.grid .colonna-teoria .span{text-align: center;}
+/*.colonna-laboratorio{text-align: center;}*/
+/*.colonna-teoria .med-text{text-align: center;}*/
+
+
+/* ! box */
+
+* {
+  box-sizing: border-box
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+  grid-column-gap: 0.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.item {
+  position: relative;
+}
+
+.item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -0.25rem;
+  height: 100vh;
+  width: 1px;
+  background: black;
+}
+
+.box {
+  background-color: pink;
+  height: 2rem;
+  margin: 0.5rem;
+}
+
+
+/* ! colore numeri */
 
 #lezione1 a span{
   color: red;
@@ -139,7 +195,6 @@ h1, h2, h3, h4, h5 p{color: #000; padding-bottom: 30px}
 #lezione9 a span{
   color: red;
 }
-
 
 
 /* ! helpers */
