@@ -97,6 +97,13 @@ h1, h2, h3, h4, h5 p {
     padding: 0 200px;
 }
 
+.testo-lista1 {
+    padding-left: 15%;
+}
+
+.spaziatura-lista {
+    padding-bottom: 15px;
+}
 
 /* ! helpers */
 
@@ -158,3 +165,7 @@ a:hover {
 .round {
     border-radius: 50%;
 }
+
+
+
+
