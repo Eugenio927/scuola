@@ -1,7 +1,7 @@
 /* ! stile base */
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Merriweather', serif;
     font-size: 16px;
 }
 
@@ -155,11 +155,14 @@ a:hover {
 .previous {
     background-color: #f1f1f1;
     color: black;
+    float: left;
 }
 
 .next {
     background-color: #4CAF50;
     color: white;
+    float: right;
+    border-radius: 5px 5px 5px 5px;
 }
 
 .round {
@@ -167,5 +170,25 @@ a:hover {
 }
 
 
+/* ! grid */
+
+.grid {
+    display: flex;
+    max-width: 1350px;
+    padding: 0 30px;
+    margin: 0 auto; /*border: 1px solid red;*/
+}
+
+.grid .col {
+    width: 100%;
+}
+
+/*
+@media (max-width: 768px) {
+    .grid {
+        flex-wrap: wrap;
+    }
+}
+*/
 
 
