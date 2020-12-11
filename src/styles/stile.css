@@ -148,7 +148,7 @@ h1, h2, h3, h4, h5 p {
     display: flex;
     width: 100%;
     align-items: center;
-    background: linear-gradient(0deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0.2) 70.71%), url('../assets/images/bgvideo.jpg') no-repeat center center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0.2) 70.71%), url('../assets/images/background.webp') no-repeat center center;
     background-size: cover;
 }
 
