@@ -12,6 +12,7 @@
           crossorigin="anonymous"/>
 
     <link rel="stylesheet" href="../../../../../styles/stile-argomenti.css">
+    <link rel="stylesheet" href="modal%20images.js">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
 
@@ -31,6 +32,19 @@
 <a href="vasi-sanguigni.html" class="next round">&#8250;</a>
 
 
+<!-- introduzione -->
+
+<div class="titolo mt-2">
+
+    <h1 class="med-text">Introduzione</h1>
+
+    <p class="normal-text">
+        Prima di inziare a parlare del cuore vero e proprio descriverò ciò che lo riveste fino ai suoi
+        componenti base.
+    </p>
+</div>
+
+
 <!-- testo 1 pericardio -->
 
 <div class="titolo mt-2">
@@ -39,6 +53,24 @@
     </h2>
 </div>
 <div class="testo">
+
+    <h1 class="intro-text">
+        Domande traccia/indice
+    </h1>
+
+    <p class="normal-text">
+        1. Che cos'è il pericardio in generale? cosa avvolge? <br>
+        2. Che ruolo ha? <br>
+        3. Da cosa è costituito? <br>
+        4. Che cos'è il pericardio fibroso? <br>
+        5. Cosa sono i legamenti pericardici? <br>
+        6. Che cos'è il pericardio sieroso? <br>
+        7. Che cos'è lo spazio/cavità pericardico? cosa è contenuto in questo/a spazio/cavità? a cosa servono? <br>
+        8. Vascolarizzazione <br>
+        9. Innervazione <br>
+        10. Tamponamneto cardiaco <br>
+    </p>
+
 
     <h1 class="med-text mt-05">
         1.0 Generalità
@@ -52,6 +84,22 @@
         Esso è costituito da 2 componenti/strati:<br>
         Il pericardio fibroso (lo strato più esterno) e quello sieroso (lo strato più interno).
     </p>
+
+    <!-- Trigger the Modal -->
+    <img id="myImg" src="strati%20cuore.jpeg" alt="strati cuore" style="width:100%;max-width:300px">
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption">Cliccare sull'immagine</div>
+    </div>
 
     <h1 class="med-text mt-05">
         1.1 Pericardio fibroso
@@ -69,42 +117,85 @@
     </h1>
 
     <p class="normal-text">
-        Dal pericardio fibroso si distaccano dei legamenti:
+        Dal pericardio fibroso si distaccano dei legamenti che sono quì sotto divisi in 5 gruppi:
     </p>
-    <dl>
-        <li>
-            <p class="normal-text">
-                Il lgemaneto sterno-pericardico superiore che origina all'incirca in corrispondenza dell'atrio di destra
-                e
-                si porta in alto fino ad arrivare posteriormente al manubrio dello sterno
-            </p>
-        </li>
-        <li><p class="normal-text">Il legamento sterno pericardico inferiore origina dall'area del pericardio che
-            corrisponde alla parete
-            antero-laterale del ventricolo destro e si porta in basso per inserirsi longitudinalmente sull'ultima parte
-            del corpo sternale</p>
-        </li>
-        <li><p class="normal-text">I legamenti pericario-frenici che si dividono in anteriore e posteriore, essi
-            connettono il pericardio al
-            centro frenico (o centro tendieneo è un ampio tendine centrale la cui forma ricorda quella di un trifoglio
-            con una foglia centrale, una a destra e una a sinistra, su quella destra il centro frenico presenta un foro
-            che permette il passaggio della vena cava inferiore) del diaframma, quello anteriore lo fa per la gran parte
-            della superficie cardiaca, quello posteriore lo fa solo in corrispondenza del solco atrio-ventricolare
-            posteriore</p>
-        </li>
-        <li><p class="normal-text">La coppia di legamenti pericardio-frenici sinistro e destro che collegano la parte
-            posteriore del pericardio
-            in corrispondenza della parete posteriore degli atri con il centro frenico del diaframma, includendo anche
-            le strutture vascolari e bronchiali trovabili in questa posizione</p>
-        </li>
-        <li><p class="normal-text">Legamenti pericardico-vertebrali anteriori che partono dal solco interatriale nella
-            sua porzione più anteriore
-            e quello posteriore che parte dalla parete posteriore dell'atrio destro e dalle strutture vascolari che ad
-            esso sono adese, i 2 legamenti si uniscono lungo la trachea e vanno a collegarsi al corpo vertebrale delle
-            ultime vertebre cervicali</p><br>
-        </li>
-    </dl>
-    <p class="normal-text">Nell'insieme la funzione di questi legamenti pericardici è quella di mantenere il cuore in
+
+    <!-- Trigger the Modal -->
+    <img id="myImg" src="legamenti%20pericardici.jpg" alt="Legamenti Pericardici" style="width:100%;max-width:300px">
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption">Cliccare sull'immagine</div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    </script>
+
+    <p class="normal-text mt-05">
+        - Il legamento sterno-pericardico superiore che origina all'incirca in corrispondenza dell'atrio di destra
+        e
+        si porta in alto fino ad arrivare posteriormente al manubrio dello sterno
+    </p>
+
+    <p class="normal-text mt-040">
+        - Il legamento sterno pericardico inferiore origina dall'area del pericardio che
+        corrisponde alla parete
+        antero-laterale del ventricolo destro e si porta in basso per inserirsi longitudinalmente sull'ultima parte
+        del corpo sternale</p>
+
+    <p class="normal-text mt-040">
+        - I legamenti pericario-frenici che si dividono in anteriore e posteriore, essi
+        connettono il pericardio al
+        centro frenico (o centro tendieneo è un ampio tendine centrale la cui forma ricorda quella di un trifoglio
+        con una foglia centrale, una a destra e una a sinistra, su quella destra il centro frenico presenta un foro
+        che permette il passaggio della vena cava inferiore) del diaframma, quello anteriore lo fa per la gran parte
+        della superficie cardiaca, quello posteriore lo fa solo in corrispondenza del solco atrio-ventricolare
+        posteriore</p>
+
+    <p class="normal-text mt-040">
+        - La coppia di legamenti pericardio-frenici sinistro e destro che collegano la parte
+        posteriore del pericardio
+        in corrispondenza della parete posteriore degli atri con il centro frenico del diaframma, includendo anche
+        le strutture vascolari e bronchiali trovabili in questa posizione</p>
+
+    <p class="normal-text mt-040">
+        - Legamenti pericardico-vertebrali anteriori che partono dal solco interatriale nella
+        sua porzione più anteriore
+        e quello posteriore che parte dalla parete posteriore dell'atrio destro e dalle strutture vascolari che ad
+        esso sono adese, i 2 legamenti si uniscono lungo la trachea e vanno a collegarsi al corpo vertebrale delle
+        ultime vertebre cervicali</p><br>
+
+
+    <p class="normal-text">
+        Nell'insieme la funzione di questi legamenti pericardici è quella di mantenere il cuore in
         asse poichè la sua
         funzione dipende anche dal mantenimento della sua posizione.</p>
 
@@ -180,6 +271,23 @@
 </div>
 <div class="testo">
 
+    <h1 class="intro-text">
+        Domande traccia/indice
+    </h1>
+
+    <p class="normal-text">
+        1. Che cos'è il cuore? <br>
+        2. Da cosa è formato? <br>
+        3. Volume, forma e morfologia esterna del cuore <br>
+        4. <br>
+        5. <br>
+        6. <br>
+        7. <br>
+        8. <br>
+        9. <br>
+        10. <br>
+    </p>
+
     <h1 class="med-text mt-1">
         2.0 Generalità
     </h1>
@@ -224,6 +332,274 @@
     </h1>
 </div>
 
+
+
+<div class="titolo mt-2">
+    <h2 class="med-text">
+        Atri
+    </h2>
+</div>
+<div class="testo">
+
+    <h1 class="med-text mt-1">
+        Atrio destro
+    </h1>
+    <p class="normal-text">
+        L'atrio destro, che ha una forma irregolare, è collocato in posizione anteriore, inferiore e a destra rispetto all'atrio sinistro. Occupa la parte superiore della faccia sternocostale del cuore, comprende il margine destro (acuto) e la porzione destra della base del cuore, cioè quella delimitata inferiormente dal solco atrioventricolare. Il lieve solco che divide le due vene cave dall'auricola destra è il solco terminale.[1] Vengono distinte nel cuore in situ sei pareti, così orientate: posteriore o del seno, anteriore o dell'anello, mediale o del setto, laterale, superiore e inferiore.[1]
+
+La muscolatura di entrambi gli atri è formata dai cosiddetti muscoli pettinati che nascono dalla cresta terminale e dirigendosi perpendicolarmente ad essa, nella parte laterale e superiore dell'atrio, formano una rete che sia in avanti che in basso va gradatamente scomparendo.[1] La cresta terminale si ritrova nella parete posteriore, dove separa il seno delle vene cave dalla parte atriale propriamente detta. L'intervallo compreso fra lo sbocco delle due vene cave presenta il tubercolo del Lower.[2]
+
+L'atrio destro raccoglie lo sbocco delle due vene cave e del seno coronario. La vena cava superiore sbocca, priva di valvole, nella parte posteriore della parete superiore dell'atrio (detta anche, volta dell'atrio). La vena cava inferiore sbocca nella parete inferiore con una valvola detta valvola di Eustachio[2]: tale formazione nei cuori adulti presenta dimensioni variabili, ma in genere è di piccole dimensioni; ha una forma semilunare, che posteriormente si continua con la cresta terminale e anteriormente raggiunge l'anello del Vieussens.
+
+Lo sbocco del seno coronarico è a sua volta dotato di una valvola, detta valvola di Tebesio che chiude l'orifizio quando l'atrio si contrae così che il sangue non ritorna all'interno del seno; attraverso di essa giunge all'atrio il sangue venoso refluo dalla circolazione coronarica.[3] La parte superiore della valvola di Tebesio si unisce alla valvola di Eustachio dando origine al tendine di Todaro.[4]
+
+La porzione posteriore risulta formata dal seno delle vene cave, e tra il seno delle vene cave e la porzione anteriore dell'atrio, esternamente, vi è una masserella di tessuto miocardico specifico o di conduzione denominato il nodo senoatriale (NSA). Nelle pareti dell'atrio destro si osservano numerosi minuscoli orifizi che rappresentano lo sbocco delle vene minime del cuore ("foraminula di Tebesio") e, talvolta, delle vene cardiache anteriori.
+
+La superficie interna dell'atrio destro mostra numerosi piccoli rilievi che costituiscono i muscoli pettinati, che si infittiscono e si inspessiscono in corrispondenza delle auricole: l'auricola destra e l'auricola sinistra.
+
+La parete settale dell'atrio destro presenta una depressione chiamata fossa ovale. In basso e in avanti la parete inferiore dell'atrio è occupata dall'ampio orifizio dell'ostio venoso atrio-ventricolare destro, dotato di una valvola detta valvola tricuspide.
+    </p>
+
+    <h1 class="med-text mt-1">
+        Atrio sinistro
+    </h1>
+    <p class="normal-text">
+        L'atrio sinistro è un po' più piccolo di quello destro, allungato trasversalmente e in un piano posteriore.[1] In esso sboccano, sulla parete posteriore, le quattro vene polmonari che portano il sangue ossigenato proveniente dai polmoni, due a destra e due a sinistra, delimitando il vestibolo dell'atrio sinistro.[1]
+
+Come per l'atrio destro si distinguono convenzionalmente sei pareti, sempre nel cuore in situ: posteriore, anteriore, inferiore, superiore, laterale e mediale. Nella parete posteriore la concavità esterna determinata dall'esofago (nota come impronta esofagea) provoca all'interno una convessità che si pone al centro fra lo sbocco delle vene polmonari destre e sinistre, che non hanno valvole, e delimitano il cosiddetto vestibolo.[1] La parete superiore è in qualche modo il tetto dell'atrio.
+
+La parete mediale è comune a quella dell'atrio destro ed è leggermente depressa nell'area che corrisponde alla fossa ovale.[2]
+
+Sulla parete dell'atrio si trovano gli orifizi di sbocco di alcune vene cardiache minime. Anteriormente vi è la parete inferiore dell'atrio, con l'ampio ostio atrio-ventricolare sinistro occupato dalla valvola mitrale. La parete laterale presenta l'auricola sinistra dall'aspetto rugoso per la presenza di numerosi muscoli pettinati che, tuttavia, risultano di dimensioni minori rispetto alla controparte destra. Nel complesso le pareti dell'atrio non presentano ulteriori rilievi muscolari , per cui sono lisce. 
+    </p>
+
+</div>
+
+
+<div class="titolo mt-2">
+    <h2 class="med-text">
+        Ventricoli
+    </h2>
+</div>
+<div class="testo">
+
+    <h1 class="med-text mt-1">
+        Ventricolo destro
+    </h1>
+    <p class="normal-text">
+        Il ventricolo destro è una delle due camere inferiori che costituiscono il corpo principale del cuore. La sua parete è più sottile rispetto a quella del ventricolo di sinistra. Il ventricolo destro presenta tre pareti: posteriore, anteriore e mediale.[1] Il sangue scorre dall'atrio destro al ventricolo destro attraverso un'ampia apertura. Questo flusso è regolato dalla valvola tricuspide, a cui sono attaccate le corde tendinee che limitano il movimento delle cuspidi ed evitano il reflusso del sangue. 
+    </p>
+
+    <h1 class="med-text mt-1">
+        Ventricolo sinistro
+    </h1>
+    <p class="normal-text">
+        Il ventricolo sinistro è una delle quattro camere del cuore umano (due atri e due ventricoli).[1] Riceve sangue ossigenato dall'atrio sinistro attraverso la valvola mitralica, e lo pompa nell'aorta attraverso la valvola aortica.
+    </p>
+
+</div>
+
+<div class="titolo mt-2">
+    <h2 class="med-text">
+        Setto inter-atriale
+    </h2>
+</div>
+<div class="testo">
+    <p class="normal-text">
+        Il setto interatriale è una lamina di forma irregolarmente quadrata che separa i due atri del cuore, costituendo la parete più interna, sia dell'atrio destro che del sinistro. Se consideriamo il cuore in situ, l'orientamento è tale che, delle due facce, una guarda a destra e in avanti, l'altra a sinistra e indietro.
+    </p>
+</div>
+
+<div class="titolo mt-2">
+    <h2 class="med-text">
+        Setto inter-ventricolare
+    </h2>
+</div>
+<div class="testo">
+    <p class="normal-text">
+        Il setto interventricolare è quella parte del cuore che occupa la parete mediale dell'organo tanto sul versante del ventricolo sinistro, quanto del ventricolo destro. Ha una forma triangolare la cui base corrisponde agli atri e l'apice alla punta del cuore.
+    </p>
+</div>
+
+<div class="titolo mt-2">
+    <h2 class="med-text">
+        Valvole cardiache
+    </h2>
+</div>
+<div class="testo">
+
+    <p class="normal-text">
+        Le valvole cardiache sono strutture che regolano il flusso del sangue all'interno del cuore. Si tratta di appendici di tessuto essenzialmente fibroso, rivestite da endocardio, che controllano il passaggio del sangue attraverso gli orifizi che collegano atri con i ventricoli ed i ventricoli con aorta o arteria polmonare. 
+    </p>
+
+    <h1 class="med-text mt-1">
+        Valvola tricuspide
+    </h1>
+    <p class="normal-text">
+        La valvola tricuspide (detta anche valvola tricuspidale) è una valvola di forma ovale (diametro di 40 mm) che regola il flusso sanguigno tra l'atrio destro ed il ventricolo destro.
+
+Deve il suo nome alle tre lamine da cui è composta, che sono dette cuspidi. Ognuna è caratterizzata da una faccia assiale, una faccia parietale, un margine aderente (che prende contatto con l'orifizio) ed un margine libero. Strutture fibrose (dette corde tendinee) connettono i muscoli papillari ai margini liberi dei lembi valvolari assicurando la loro coaptazione durante la sistole. Il focolaio di ascoltazione della tricuspide è situato nel IV spazio intercostale marginosternale destro e sinistro. 
+    </p>
+
+    <h1 class="med-text mt-1">
+        Valvola polmonare
+    </h1>
+    <p class="normal-text">
+        La valvola semilunare polmonare o valvola polmonare (diametro di 20 mm) regola il flusso sanguigno dal cuore verso la circolazione polmonare. Sul numero di lembi che la compongono vale il distinguo fatto per la valvola semilunare aortica. L'ispessimento fibroso che rende più completa la chiusura prende il nome di nodulo di Morgagni. Il focolaio di ascoltazione della semilunare polmonare corrisponde al focolaio anatomico ed è situato presso il secondo spazio intercostale sinistro nelle vicinanze dello sterno. 
+    </p>
+
+    <h1 class="med-text mt-1">
+        Valvola aortica
+    </h1>
+    <p class="normal-text">
+        La valvola semilunare aortica o valvola aortica (diametro di 20 mm) regola il flusso sanguigno dal cuore verso il sistema circolatorio.
+
+Localizzata presso l'orifizio che collega l'aorta al ventricolo sinistro, la valvola ha una struttura a nido di rondine. Erroneamente si considera come unica valvola la somma dei tre lembi, in realtà ogni lembo costituisce una valvola e la loro posizione sfalsata assicura la chiusura del vaso impedendo il reflusso del sangue nel ventricolo. Hanno una caratteristica forma a semiluna, da cui deriva il nome. I tre lembi hanno un ispessimento fibroso, detto nodulo di Aranzio, che, a valvola chiusa, rende più completa la chiusura della valvola. Il focolaio di ascoltazione corrisponde al secondo spazio intercostale destro in vicinanza dello sterno. 
+    </p>
+
+    <h1 class="med-text mt-1">
+        Valvola mitrale
+    </h1>
+    <p class="normal-text">
+        La valvola mitrale, così chiamata per la somiglianza con il copricapo cerimoniale (nota anche come valvola bicuspide) ha un diametro di oltre 30 mm, regola il flusso sanguigno tra l'atrio sinistro ed il ventricolo sinistro ed ha un orifizio di 4–6 cm². Secondo le più moderne tendenze, si preferisce oggi chiamare il complesso sistema mitralico come apparato valvolare mitralico e non più come valvola mitrale, in quanto è la complessa interazione fra anello valvolare, lembi valvolari, corde tendinee, muscoli papillari e ventricolo sinistro a far funzionare correttamente il meccanismo della valvola.
+
+Come la valvola tricuspide, presenta una forma leggermente ovale. A differenza della tricuspide, la valvola mitrale presenta due cuspidi: una, più grande, posta in avanti e medialmente, che corrisponde alla parete anteriore e sinistra del setto, guarda l'orifizio aortico e si chiama cuspide anteriore o aortica; l'altra, più piccola, posta indietro e lateralmente, che corrisponde alla parete posteriore del ventricolo sinistro e si chiama cuspide posteriore. Il lembo anteriore della mitrale è sempre liscio. I muscoli papillari sono due e sorgono in prossimità dell'apice del ventricolo sinistro: uno si chiama anteriore e sta avanti e lateralmente, l'altro si chiama posteriore e sta a destra e lateralmente. Le corde tendinee si inseriscono sulle cuspidi valvolari in modo da ottimizzare la distribuzione dello stress durante la sistole[1][2]. Il focolaio di ascoltazione della mitrale è situato in una zona detta l'itto della punta, che corrisponde all'apice del cuore e si apprezza nel 5° spazio intercostale un centimetro all'interno della linea emiclaveare. 
+    </p>
+
+</div>
+
+<div class="titolo mt-2">
+    <h2 class="med-text">
+        Corde tendinee
+    </h2>
+</div>
+<div class="testo">
+</div>
+
+<div class="titolo mt-2">
+    <h2 class="med-text">
+        Muscoli papillari
+    </h2>
+</div>
+<div class="testo">
+</div>
+
+<div class="titolo mt-2">
+    <h2 class="med-text">
+        Ciclo cardiaco
+    </h2>
+</div>
+<div class="testo">
+    <h1 class="med-text mt-1">
+    </h1>
+</div>
+
+<div class="titolo mt-2">
+    <h2 class="med-text">
+        Piccola e grande circolazione
+    </h2>
+</div>
+<div class="testo">
+    <h1 class="med-text mt-1">
+    </h1>
+</div>
+
+<div class="titolo mt-2">
+    <h2 class="med-text">
+        Sistole e Diastole Atrio-Ventricolare
+    </h2>
+</div>
+<div class="testo">
+    <h1 class="med-text mt-1">
+        Sistole atriale
+    </h1>
+    <p class="normal-text">
+        Corrisponde alla contrazione dei soli atri e serve a travasare il sangue nei ventricoli.
+    </p>
+
+    <h1 class="med-text mt-1">
+        Sistole ventricolare
+    </h1>
+    <p class="normal-text">
+        Corrisponde alla contrazione dei soli ventricoli e serve a pompare il sangue nei vasi sanguigni.
+    </p>
+
+    <h1 class="med-text mt-1">
+        Diastole atriale
+    </h1>
+    <p class="normal-text">
+        È la riespansione degli atri prima di una nuova sistole atriale.
+    </p>
+
+    <h1 class="med-text mt-1">
+        Diastole ventricolare
+    </h1>
+    <p class="normal-text">
+        È la riespansione dei ventricoli prima di una nuova sistole ventricolare.
+    </p>
+
+    <p class="normal-text">
+        Sistole e diastole si accavallano nel tempo, iniziando quando una ha già avuto parziale svolgimento.
+    </p>
+
+</div>
+
+<div class="titolo mt-2">
+    <h2 class="med-text">
+        Sistema di conduzione elettrica del cuore
+    </h2>
+</div>
+<div class="testo">
+    <p class="normal-text">
+        Il sistema di conduzione elettrica del cuore è un tessuto che crea e conduce un impulso elettrico dagli atri a tutto il corpo ventricolare del cuore, creando così la contrazione adatta a perfondere con il sangue tutto l'organismo.
+    </p>
+    <p class="normal-text">
+        Il controllo esterno al cuore è essenzialmente sostenuto dal sistema nervoso autonomo comunque
+        l'impulso origina dal nodo seno atriale poi passa per le vie internodali e arriva al nodo atrio-ventricolare.
+        Da quì poi si divide nel fascio di His e si propaga nella branca destra e sinistra fino alle fibre del 
+        purkinje.
+    </p>
+
+    <p class="normal-text">
+        L'attività del sistema di conduzione è valutabile mediante elettrocardiogramma. 
+    </p>
+</div>
+
+<div class="titolo mt-2">
+    <h2 class="med-text">
+        Elettrocardiogramma
+    </h2>
+</div>
+<div class="testo">
+</div>
+
+<div class="titolo mt-2">
+    <h2 class="med-text">
+        Malattie cardiache
+    </h2>
+</div>
+<div class="testo">
+</div>
+
+<div class="titolo mt-2">
+    <h2 class="med-text">
+        Vascolarizzazione e drenaggio linfatico
+    </h2>
+</div>
+<div class="testo">
+    <h1 class="med-text mt-1">
+    </h1>
+</div>
+
+<div class="titolo mt-2">
+    <h2 class="med-text">
+        Innervazione
+    </h2>
+</div>
+<div class="testo">
+    <h1 class="med-text mt-1">
+    </h1>
+</div>
 
 <!-- bottoni -->
 
