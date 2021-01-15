@@ -216,6 +216,9 @@ con .item referenzio una classe di items (.classe posso usarla su più items)
     color: #fff
 }
 
+ul {
+    list-style-type: none;
+}
 
 *,
 *:before,
