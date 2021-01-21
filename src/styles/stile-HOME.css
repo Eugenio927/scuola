@@ -203,6 +203,10 @@ h1, h2, h3, h4, h5 p {
     text-align: center;
 }
 
+.carousel-cell h3 a {
+    color: #fff;
+    font-family: serif;
+}
 
 /* ! helpers */
 

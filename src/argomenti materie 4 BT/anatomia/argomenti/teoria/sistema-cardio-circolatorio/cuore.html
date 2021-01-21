@@ -12,10 +12,13 @@
         integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
         crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="../../../../../styles/stile-argomenti.css">
-    <link rel="stylesheet" href="modal%20images.js">
-
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../../../../styles/stile-argomenti.css">
+
+    <!-- <link rel="stylesheet" href="modal%20images.js"> -->
+
+
 
 </head>
 
@@ -25,7 +28,7 @@
 
     <div class="menu">
         <ul class="menu">
-            <li><a href="../../../../../../index.html">HOME</a></li>
+            <a href="../../../../../../index.html">HOME</a>
         </ul>
     </div>
 
@@ -89,20 +92,11 @@
             Il pericardio fibroso (lo strato più esterno) e quello sieroso (lo strato più interno).
         </p>
 
-        <!-- Trigger the Modal -->
-        <img id="myImg" src="strati%20cuore.jpeg" alt="strati cuore" style="width:100%;max-width:300px">
-
-        <!-- The Modal -->
+        <img class="myImages" id="myImg" src="strati cuore.jpeg" alt="Midnight sun in Lofoten, Norway">
         <div id="myModal" class="modal">
-
-            <!-- The Close Button -->
             <span class="close">&times;</span>
-
-            <!-- Modal Content (The Image) -->
             <img class="modal-content" id="img01">
-
-            <!-- Modal Caption (Image Text) -->
-            <div id="caption">Cliccare sull'immagine</div>
+            <div id="caption"></div>
         </div>
 
         <h1 class="med-text mt-05">
@@ -125,45 +119,12 @@
             Dal pericardio fibroso si distaccano dei legamenti che sono quì sotto divisi in 5 gruppi:
         </p>
 
-        <!-- Trigger the Modal -->
-        <img id="myImg" src="legamenti%20pericardici.jpg" alt="Legamenti Pericardici"
-            style="width:100%;max-width:300px">
-
-        <!-- The Modal -->
+        <img class="myImages" id="myImg" src="legamenti pericardici.jpg" alt="Midnight sun in Lofoten, Norway">
         <div id="myModal" class="modal">
-
-            <!-- The Close Button -->
             <span class="close">&times;</span>
-
-            <!-- Modal Content (The Image) -->
             <img class="modal-content" id="img01">
-
-            <!-- Modal Caption (Image Text) -->
-            <div id="caption">Cliccare sull'immagine</div>
+            <div id="caption"></div>
         </div>
-
-        <script>
-            // Get the modal
-            var modal = document.getElementById("myModal");
-
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg");
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img.onclick = function () {
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
-            }
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function () {
-                modal.style.display = "none";
-            }
-        </script>
 
         <p class="normal-text mt-05">
             - Il legamento sterno-pericardico superiore che origina all'incirca in corrispondenza dell'atrio di destra
@@ -825,6 +786,38 @@
 
     <a href="vasi-sanguigni.html" class="next">Lezione successiva &raquo;</a>
     <a href="sangue.html" class="previous">« lezione precedente</a>
+
+
+
+
+
+    <script>
+        // create references to the modal...
+        var modal = document.getElementById('myModal');
+        // to all images -- note I'm using a class!
+        var images = document.getElementsByClassName('myImages');
+        // the image in the modal
+        var modalImg = document.getElementById("img01");
+        // and the caption in the modal
+        var captionText = document.getElementById("caption");
+
+        // Go through all of the images with our custom class
+        for (var i = 0; i < images.length; i++) {
+            var img = images[i];
+            // and attach our click listener for this image.
+            img.onclick = function (evt) {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
 
 </body>
 

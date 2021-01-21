@@ -97,6 +97,24 @@ h1, h2, h3, h4, h5 p {
     background-size: cover;
 }
 
+.hero-letteratura {
+    height: 350px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3) 70.71%), url('../assets/images-indici/letteratura.jpg') no-repeat bottom;
+    background-size: cover;
+}
+
+.hero-storia {
+    height: 350px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3) 70.71%), url('../assets/images-indici/storia.jpg') no-repeat center center;
+    background-size: cover;
+}
+
 
 /* ! hero content */
 
