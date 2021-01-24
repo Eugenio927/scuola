@@ -125,6 +125,19 @@ b {
         font-size: 1.2em;
     }
 
+    #quadr {
+        background-color: lightgray;
+        width: 98%;
+        text-align: center;
+      }
+
+      .contenutotabellamatematica {
+        border: 1px solid black;
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 15px;
+      }
+
 }
 
 
@@ -152,6 +165,12 @@ b {
     .spaziatura-lista {
         padding-bottom: 15px;
     }
+
+    #quadr {
+        background-color: lightgray;
+        width: 24%;
+        text-align: center;
+      }
 }
 
 
@@ -398,7 +417,7 @@ a:hover {
   }
 
   .accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    content: '\1433'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: #777;
     float: right;
@@ -406,7 +425,7 @@ a:hover {
   }
   
   .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    content: "\142F"; /* Unicode character for "minus" sign (-) */
   }
 
   .contenutotabellamatematica td {
