@@ -13,6 +13,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../../styles/stile-argomenti.css">
+
+    <style>
+        .fr {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 90%;
+            text-align: center;
+        }
+
+        .fr span {
+            display: block;
+        }
+
+        .fd {
+            padding-top: .05em;
+            border-top: .125em black solid;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,6 +42,9 @@
             <a href="../../../index.html">HOME</a>
         </ul>
     </div>
+
+    <a href=".html" class="previous round">&#8249;</a>
+    <a href=".html" class="next round">&#8250;</a>
 
     <div class="titolo">
         <h2 class="big-text">
@@ -45,11 +66,12 @@
             log<sub>x</sub> y = z <font>&#x21D4</font> x<sup>2</sup> = y
         </p>
 
-        <button class="accordion">Propietà dei logaritmi</button>
+        <button class="accordion">Propietà dei logaritmi (base) </button>
         <div class="panel">
             <p class="normal-text">In primo luogo, dobbiamo conoscere la struttura di base di un logaritmo ("logaritmo"
                 viene abbreviato <i>log</i> per comodità/convenizone). <br>
-                <i>log<sub>a</sub> b = c</i>  può essere scritto come <i>a<sup>c</sup> = b</i> , dove <i>a</i> è la <b>base</b>, <i>c</i> l'<b>esponente</b>, e <i>b</i> l'<b>argomento</b>. <br>
+                <i>log<sub>a</sub> b = c</i> può essere scritto come <i>a<sup>c</sup> = b</i> , dove <i>a</i> è la
+                <b>base</b>, <i>c</i> l'<b>esponente</b>, e <i>b</i> l'<b>argomento</b>. <br>
                 Anche <i>log</i> senza base non è altro che l'abbreviazione di <i>log</i> in base <sub>10</sub>. <br>
                 Sapendo questo possiamo finalmente studiare le proprietà dei logaritmi. <br>
             </p>
@@ -72,7 +94,8 @@
                         </i>
                     </td>
                     <td>
-                        Quando ci sono 2 <i>log</i> con la stessa base, è possibile unirli in un <i>log</i> e moltiplicarne gli argomenti.
+                        Quando ci sono 2 <i>log</i> con la stessa base, è possibile unirli in un <i>log</i> e
+                        moltiplicarne gli argomenti.
                     </td>
                     <td>
                         <i>
@@ -83,7 +106,7 @@
                 <tr>
                     <td>
                         <i>
-                            log<sub>a</sub> b -<br> log<sub>a</sub> c =<br> log<sub>a</sub> b/c
+                            log<sub>a</sub> b -<br> log<sub>a</sub> c =<br> log<sub>a</sub> <span class="fr">b<span class="fd">c</span></span>
                         </i>
                     </td>
                     <td>
@@ -91,8 +114,8 @@
                     </td>
                     <td>
                         <i>
-                        log<sub>2</sub> 18 -<br> log<sub>2</sub> 6 =<br> log<sub>2</sub> 3
-                    </i>
+                            log<sub>2</sub> 18 -<br> log<sub>2</sub> 6 =<br> log<sub>2</sub> 3
+                        </i>
                     </td>
                 </tr>
                 <tr>
@@ -102,7 +125,7 @@
                         </i>
                     </td>
                     <td>
-                        Quando il risultato ha un esponente, lo si può spostare e moltiplicare davanti al <i>log</i>
+                        Quando il risultato ha un esponente, lo si può spostare e moltiplicare davanti al <i>log</i>.
                     </td>
                     <td>
                         <i>
@@ -113,54 +136,84 @@
                 <tr>
                     <td>
                         <i>
-                            log<sub>a<sup>b</sup></sub> c =<br> <sup>1</sup>/<sub>b</sub> log<sub>a</sub> c
+                            log<sub>a<sup>b</sup></sub> c =<br> <span class="fr">1<span class="fd">b</span></span> log<sub>a</sub> c
                         </i>
                     </td>
                     <td>
-                        Quando la basi ha un esponente, si può spostare e moltiplicare l'esponente davanto al <i>log</i>
+                        Quando la base ha un esponente, si può spostare e moltiplicare l'esponente davanto al <i>log</i>.
                     </td>
                     <td>
                         <i>
-                            log<sub>π<sup>2</sup></sub> e =<br> <sup>1</sup>/<sub>2</sub> log<sub>π</sub> e
+                            log<sub>π<sup>2</sup></sub> e =<br> <span class="fr">1<span class="fd">2</span></span> log<sub>π</sub> e
                         </i>
                     </td>
                 </tr>
                 <tr>
                     <td>
-
+                        <i>
+                            log<sub>a</sub> b = <span class="fr">log<sub>c</sub> b<span class="fd">log<sub>c</sub>
+                                    a</span></span>
+                        </i>
                     </td>
                     <td>
-
+                        Questa è la formula del cambiamento di base. <br>
+                        Si può riorganizzare qualsiasi logaritmo facendo una frazione, con il logaritmo dell'argomento al numeratore e il logaritmo della base al denominatore. <br>
+                        Qualsiasi base può essere scelta per i <i>log</i>, ma le basi devono essere le stesse per entrambi i <i>log</i>.
                     </td>
                     <td>
-                        
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        
+                        <i>
+                            log<sub>2</sub> π = <span class="fr">log π<span class="fd">log 2</span></span>
+                        </i>
                     </td>
                 </tr>
                 <tr>
                     <td>
-
+                        <i>
+                            log<sub>a</sub> b = <span class="fr">1<span class="fd">log<sub>b</sub> a </span></span>
+                        </i>
                     </td>
                     <td>
-
+                        Se vuoi cambiare la base del <i>log a</i> con l'argomento <i>b</i>, scambiali.
                     </td>
                     <td>
-                        
+                        <i>
+                            log<sub>4</sub> e = <span class="fr">log<sub>e</sub> e <span class="fd">log<sub>e</sub> 4</span></span> = <span class="fr">1<span class="fd">log<sub>e</sub> 4 </span></span>
+                        </i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i>
+                            a<sup>log<sub>a</sub>b</sup> = b
+                        </i>
+                    </td>
+                    <td>
+                        Quando una costante <i>a</i> viene elevata alla potenza <i>log<sub>a</sub> b</i>, il risultato dell'espressione è <i>b</i> .
+                    </td>
+                    <td>
+                        <i>
+                            e <sup>log <sub>e</sub> 3</sup> = 3
+                        </i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i>
+                            log<sub>a</sub> 1 = 0
+                        </i>
+                    </td>
+                    <td>
+                        Qualsiasi log che ha <i>1</i> come argomento sarà uguale a <i>0</i>.
+                    </td>
+                    <td>
+                        <i>
+                            log<sub>π*e</sub> 1 = 0
+                        </i>
                     </td>
                 </tr>
             </table>
         </div>
-
+<!--
         <button class="accordion">Section 2</button>
         <div class="panel">
             <p>Lorem ipsum...</p>
@@ -170,8 +223,11 @@
         <div class="panel">
             <p>Lorem ipsum...</p>
         </div>
-
+    -->
     </div>
+
+    <a href=".html" class="next">Lezione successiva &raquo;</a>
+    <a href=".html" class="previous">« lezione precedente</a>
 
     <script>
         var acc = document.getElementsByClassName("accordion");
