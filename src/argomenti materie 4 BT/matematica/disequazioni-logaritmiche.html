@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../../styles/stile-argomenti.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        .fr {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 90%;
+            text-align: center;
+        }
+
+        .fr span {
+            display: block;
+        }
+
+        .fd {
+            padding-top: .05em;
+            border-top: .125em black solid;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- menu nav bar-->
+
+    <div class="menu">
+        <ul class="menu">
+            <a href="../../../index.html">HOME</a>
+        </ul>
+    </div>
+
+    <a href=".html" class="previous round">&#8249;</a>
+    <a href=".html" class="next round">&#8250;</a>
+
+    <div class="titolo">
+        <h2 class="big-text">
+            Le disequazioni logaritmiche
+        </h2>
+    </div>
+
+    <div class="testo mt-1">
+
+        <p class="normal-text">
+            Le disequazioni logaritmiche sono disequazioni in cui uno (o entrambi) i lati coinvolgono un logaritmo. <br>
+            Come le disequazioni esponenziali, sono utili nell'analisi di situazioni che implicano moltiplicazioni
+            ripetute come nei casi di interesse (in economia, l'interesse è il prezzo del denaro insomma, cioè si tratta
+            di un pagamento aggiuntivo pagato da un mutuatario a un investitore o prestatore oltre al rimborso
+            dell'importo preso in prestito.) e nel dicadimento esponenziale (in fisica e matematica è la diminuizione di
+            una quantità proporzionale al valore della stessa).
+        </p>
+
+        <button class="accordion">Introduzione</button>
+        <div class="panel">
+            <p class="normal-text">
+                La chiave per lavorare con le disequazioni logaritmiche è il seguente fatto:
+            </p>
+            <p id="quadr">
+                Se <i>a > 1 e x > y</i>, allora <i>log<sub>a</sub> x > log<sub>a</sub> y</i>. <br>
+                Altrimenti, se <i>0 < a < 1</i>, allora <i>log<sub>a</sub> x < log<sub>a</sub> y</i>.
+            </p>
+            <p class="normal-text">
+                Ovviamente, la base di un logaritmo non può essere 1 o negativa. <br>
+                Ancora più importante, è vero anche il contrario:
+            </p>
+            <p id="quadr">
+                Se <i>a > 1</i> e <i>log<sub>a</sub> x > log<sub>a</sub> y</i>, allora <i>x > y</i>.
+                Altrimenti, se <i>0 < a < 1</i>, allora <i>x < y</i>
+            </p>
+            <p class="normal-text">
+                In altri termini più formali, la funzione logaritmica f(x) = log<sub>a</sub> x è <b>monotonicamente
+                    crescente</b> (aumentando x aumenta sempre la funzione f(x)) per <i>a > 1</i>, e
+                <b>monotonicamente decrescente</b> (aumentando x diminuisce sempre la funzione f(x)) per 0 < a < 1.
+            </p>
+            <p class="normal-text">
+fortunatamente
+            </p>
+        </div>
+
+    </div>
+
+    <br>
+
+    <a href=".html" class="next">Lezione successiva &raquo;</a>
+    <a href=".html" class="previous">« lezione precedente</a>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

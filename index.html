@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>HOME</title>
     <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
-          integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
-          rel="stylesheet"/>
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        rel="stylesheet" />
 
     <link href="src/styles/stile-HOME.css" rel="stylesheet">
     <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css"
-          integrity="sha512-ztsAq/T5Mif7onFaDEa5wsi2yyDn5ygdVwSSQ4iok5BPJQGYz1CoXWZSA7OgwGWrxrSrbF0K85PD5uLpimu4eQ=="
-          rel="stylesheet"/>
+        integrity="sha512-ztsAq/T5Mif7onFaDEa5wsi2yyDn5ygdVwSSQ4iok5BPJQGYz1CoXWZSA7OgwGWrxrSrbF0K85PD5uLpimu4eQ=="
+        rel="stylesheet" />
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
     <script src="src/js/index.js" type="application/javascript"></script>
 
 </head>
+
 <body>
 
-<div class="header">
-    <div class="logo">
-        <img alt="" src="src/assets/images/logo.png">
+    <div class="header">
+        <div class="logo">
+            <img alt="" src="src/assets/images/logo.png">
+        </div>
     </div>
-</div>    
 
-<div class="hero">
-    <div class="hero__content">
-        <p class="intro-text">Dispense, appunti e altro...</p>
-        <!-- TODO: Mettere un titolo figo nella home page -->
-        <h1 class="big-text">Home Page</h1>
-        <!--<a href=""  class="button">Discover More</a>-->
+    <div class="hero">
+        <div class="hero__content">
+            <p class="intro-text">Dispense, appunti e altro...</p>
+            <!-- TODO: Mettere un titolo figo nella home page -->
+            <h1 class="big-text">Home Page</h1>
+            <!--<a href=""  class="button">Discover More</a>-->
+        </div>
     </div>
-</div>
 
-<div class="titolo">
-<h1 class="big-text" style="text-align: center; padding-top: 50px;">
-Materie scolastiche
-</h1>
-</div>
+    <div class="titolo">
+        <h1 class="big-text" style="text-align: center; padding-top: 50px;">
+            Materie scolastiche
+        </h1>
+    </div>
 
-<!--
+    <!--
 <div class="grid mt-3">
     <div class="col">
         <h3 class="big-text">Materie<br/>Scolastiche</h3>
@@ -60,52 +62,90 @@ Materie scolastiche
 </div>
 -->
 
-<div class="grid mt-3">
-    <h3 class="big-text">4 BT</h3>
-</div>
+    <div class="grid mt-3">
+        <h3 class="big-text">4 BT</h3>
+    </div>
 
-<!-- TODO: provare a mettere una classe grid per mettere il bordo trasparente nei carousel-->
+    <!-- TODO: provare a mettere una classe grid per mettere il bordo trasparente nei carousel-->
 
-<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
-    <div class="carousel-cell"><h3 class="intro-text" style="font-size: 30px;"><a href="src/indici%20argomenti/anatomia-indice-argomenti.html">Anatomia</a></h3></div>
-    <div class="carousel-cell"><h3 class="intro-text" style="font-size: 30px;"><a href="src/indici argomenti/chimica-anal-indice-argomenti.html">Chimica anal.</a></h3></div>
-    <div class="carousel-cell"><h3 class="intro-text" style="font-size: 30px;"><a href="src/indici%20argomenti/chimica-organica-indice-argomenti.html">Chimica organica</a></h3></div>
-    <!--<div class="carousel-cell"><h3 class="intro-text" style="font-size: 30px;"><a href="materie/educazione-fisica-motoria">motoria</a></h3></div>
+    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+        <div class="carousel-cell">
+            <h3 class="intro-text" style="font-size: 30px;"><a
+                    href="src/indici%20argomenti/anatomia-indice-argomenti.html">Anatomia</a></h3>
+        </div>
+        <div class="carousel-cell">
+            <h3 class="intro-text" style="font-size: 30px;"><a
+                    href="src/indici argomenti/chimica-anal-indice-argomenti.html">Chimica anal.</a></h3>
+        </div>
+        <div class="carousel-cell">
+            <h3 class="intro-text" style="font-size: 30px;"><a
+                    href="src/indici%20argomenti/chimica-organica-indice-argomenti.html">Chimica organica</a></h3>
+        </div>
+        <!--<div class="carousel-cell"><h3 class="intro-text" style="font-size: 30px;"><a href="materie/educazione-fisica-motoria">motoria</a></h3></div>
     <div class="carousel-cell"><h3 class="intro-text" style="font-size: 30px;"><a href="materie/inglese">inglese</a></h3></div> -->
-    <div class="carousel-cell"><h3 class="intro-text" style="font-size: 30px;"><a href="src/indici argomenti/letteratura-indice-argomenti.html">Letteratura</a></h3></div>
-    <div class="carousel-cell"><h3 class="intro-text" style="font-size: 30px;"><a href="src/indici argomenti/storia-indici-argomenti.html">storia</a></h3></div>
-    <div class="carousel-cell"><h3 class="intro-text" style="font-size: 30px;"><a href="src/indici argomenti/matematica-indici-argomenti.html">Matematica</a></h3></div>
-    <div class="carousel-cell"><h3 class="intro-text" style="font-size: 30px;"><a href="src/indici%20argomenti/microbiologia-indice-argomenti.html">Microbiologia</a></h3></div>
-    <!--<div class="carousel-cell"><h3 class="intro-text" style="font-size: 30px;"><a href="materie/religione">religione</a></h3></div>-->
-</div>
+        <div class="carousel-cell">
+            <h3 class="intro-text" style="font-size: 30px;"><a
+                    href="src/indici argomenti/letteratura-indice-argomenti.html">Letteratura</a></h3>
+        </div>
+        <div class="carousel-cell">
+            <h3 class="intro-text" style="font-size: 30px;"><a
+                    href="src/indici argomenti/storia-indici-argomenti.html">storia</a></h3>
+        </div>
+        <div class="carousel-cell">
+            <h3 class="intro-text" style="font-size: 30px;"><a
+                    href="src/indici argomenti/matematica-indici-argomenti.html">Matematica</a></h3>
+        </div>
+        <div class="carousel-cell">
+            <h3 class="intro-text" style="font-size: 30px;"><a
+                    href="src/indici%20argomenti/microbiologia-indice-argomenti.html">Microbiologia</a></h3>
+        </div>
+        <div class="carousel-cell"><h3 class="intro-text" style="font-size: 30px;"><a href="src/indici argomenti/religione-indice-argomenti.html">Religione</a></h3></div>
+    </div>
 
-<div class="grid mt-3">
-    <h3 class="big-text">5 BT</h3>
-</div>
+    <div class="grid mt-3">
+        <h3 class="big-text">5 BT</h3>
+    </div>
 
-<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
-    <div class="carousel-cell"><h3 class="med-text"><a href="">materia</a></h3></div>
-</div>
+    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+        <div class="carousel-cell">
+            <h3 class="med-text"><a href="">materia</a></h3>
+        </div>
+    </div>
 
+    <div class="grid mt-3">
+        <h3 class="big-text">EXTRA</h3>
+    </div>
 
-<!-- Jquery -->
+    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+        <div class="carousel-cell">
+            <h3 class="med-text"><a href="">fenomeni aleatori</a></h3>
+            <h3 class="med-text"><a href="">fenomeni deterministici</a></h3>
+            <h3 class="med-text"><a href="">fisica</a></h3>
+            <!-- <h3 class="med-text"><a href="">filosofia</a></h3> -->
+        </div>
+    </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Jquery -->
 
-<script crossorigin="anonymous"
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+    </script>
+
+    <script crossorigin="anonymous"
         integrity="sha512-Nx/M3T/fWprNarYOrnl+gfWZ25YlZtSNmhjHeC0+2gCtyAdDFXqaORJBj1dC427zt3z/HwkUpPX+cxzonjUgrA=="
-        src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
+        src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js">
+        </script>
 
-<script>
-    $(document).ready(function () {
+    <script>
+        $(document).ready(function () {
 
-        /* Open Panel */
-        $(".hamburger").on('click', function () {
-            $(".menu").toggleClass("menu--open");
+            /* Open Panel */
+            $(".hamburger").on('click', function () {
+                $(".menu").toggleClass("menu--open");
+            });
+
         });
-
-    });
-</script>
+    </script>
 
 </body>
+
 </html>
