@@ -24,16 +24,64 @@
 
     </div>
 
+    <button class="accordion">
+        <h1>Sommario (clicca qui per aprire)</h1>
+    </button>
+    <div class="panel">
+        <ul>
+            <li>
+                <a href="#LaVita">La vita</a>
+            </li>
+            <ul>
+                <li>
+                    <a href="#Periodo giovanile">Periodo giovanile</a>
+                </li>
+                <li>
+                    <a href="#Alla corte di Ferrara">Alla corte di Ferrara</a>
+                </li>
+                <li>
+                    <a href="#Il tormentato periodo della maturità">Il tormentato periodo della maturità</a>
+                </li>
+            </ul>
+        </ul>
+        <ul>
+            <li>
+                <a href="#Contesto storico-culturale">Contesto storico-culturale</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="#Le opere">Le opere</a>
+            </li>
+            <ul>
+                <li>
+
+                </li>
+            </ul>
+            <ul>
+                <li>
+
+                </li>
+            </ul>
+        </ul>
+        <ul>
+            <li>
+
+            </li>
+        </ul>
+
+    </div>
+
     <div class="titolo">
         <h2 class="big-text">
-            La vita
+            <a name="LaVita">La vita</a>
         </h2>
     </div>
 
     <div class="testo mt-1">
 
         <h1 class="med-text">
-            Periodo giovanile
+            <a name="Periodo giovanile">Periodo giovanile</a>
         </h1>
         <p class="normal-text">
             Torquato Tasso nasce a <b>Sorrento</b> l'<u>11 marzo 1544</u> da una nobile famiglia bergamasca. <br>
@@ -67,7 +115,7 @@
         </p>
 
         <h1 class="med-text">
-            Alla corte di Ferrara
+            <a name="Alla corte di Ferrara">Alla corte di Ferrara</a>
         </h1>
         <p class="normal-text">
             Rimase a Urbino fino al 1565 quando fu assunto al servizio del cardinale Luigi (o ippolito?) d'Este e si
@@ -83,7 +131,7 @@
         </p>
 
         <h1 class="med-text">
-            Il tormentato periodo della maturità
+            <a name="Il tormentato periodo della maturità">Il tormentato periodo della maturità</a>
         </h1>
         <p class="normal-text">
             I problemi, prima ancora dei primi sintomi di squilibrio mentale, iniziano con degli <b>scrupoli
@@ -157,7 +205,7 @@
 
     <div class="titolo">
         <h2 class="big-text">
-            Contesto storico-culturale
+            <a name="Contesto storico-culturale">Contesto storico-culturale</a>
         </h2>
     </div>
     <div class="testo">
@@ -183,7 +231,7 @@
 
     <div class="titolo">
         <h2 class="big-text">
-            Le opere
+            <a name="Le opere">Le opere</a>
         </h2>
     </div>
 
@@ -193,14 +241,14 @@
         </p>
 
         <h2 class="big-text" style="text-align: center;">
-            Opere maggiori
+            <a name="Opere maggiori">Opere maggiori</a>
         </h2>
 
         <h1 class="med-text" style="text-align: center;">
-            La Gerusalemme liberata
+            <a name="La Gerusalemme liberata">La Gerusalemme liberata</a>
         </h1>
         <h2 class="med-text">
-            Parafrasi proemio gerusalemme liberata
+            <a name="Parafrasi proemio gerusalemme liberata">Parafrasi proemio gerusalemme liberata</a>
         </h2>
         <p class="normal-text">
         <p class="normal-text">Nelle ottave iniziali del poema l'autore propone anzitutto la "protasi", l'enunciazione
@@ -350,7 +398,7 @@
         </p>
 
         <h2 class="med-text">
-            Parafrasi duello tra Clorinda e Tancredi (strofe 53-70)
+            <a name="Parafrasi duello tra Clorinda e Tancredi (strofe 53-70)">Parafrasi duello tra Clorinda e Tancredi (strofe 53-70)</a>
         </h2>
         <p class="normal-text">
         <p class="normal-text">
@@ -832,7 +880,7 @@
         </p>
         </p>
         <h2 class="med-text">
-            Trama
+            <a name="Trama gerusalemme liberata">Trama gerusalemme liberata</a>
         </h2>
         <p class="normal-text">
             La trama ruota attorno allo storico condottiero Goffredo di Buglione che era giunto al sesto anno della
@@ -842,7 +890,7 @@
         </p>
 
         <h2 class="med-text">
-            Personaggi
+            <a name="Personaggi gerusalemme liberata">Personaggi gerusalemme liberata</a>
         </h2>
         <p class="normal-text">
             Classifico i personaggi in 3 categorie:
@@ -911,7 +959,7 @@
 
         </p>-->
         <h2 class="med-text">
-            Struttura
+            <a name="Struttura gerusalemme liberata">Struttura gerusalemme liberata</a>
         </h2>
         <p class="normal-text">
             La Geruslaemme liberata è un poema (composizione poetica/letteraria spesso di notevoli dimensioni di
@@ -1522,7 +1570,22 @@ aggiungere mappa e manierismo nella scheramta dell'indice argomenti. -->
         </h2>
     </div>
 
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
 
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
 
 </body>
 
