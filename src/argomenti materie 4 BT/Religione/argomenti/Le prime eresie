@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+				<head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Document</title> <link rel="stylesheet" href="../../../styles/stile-argomenti.css"> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet"></head> <body> <!-- menu nav bar--> <div class="menu"> <ul class="menu"> <a href="../../../../index.html">HOME</a> <!--<a href="../../src/Fonti e ringraziamenti/.html" style="float: right;">Fonti</a>--> </ul> </div> <a href=".html" class="previous round">&#8249;</a> <a href=".html" class="next round">&#8250;</a> <div class="titolo"> <h2 class="big-text"> Le prime eresie </h2> </div>
+				<div class="testo mt-1"> <p class="normal-text">
+								Nella lezione precedente abbiamo trattato la diffusione del cristianesimo passando dal non essere accettata al divemtare una vera e propria religione di stato. <br>
+								In questo periodo cominciarono a svilupparsi le prime forme di eresie (dovute anche alle incursioni barbariche). <br>
+								Una forma di eresia è la dottrina cristologica chiamata arianesimo elaborata dal presbitero, monaco e teologo cristiano Ario (256-336); ci furono delle divergenze sorte inizialmente nella Chiesa di Alessandria d'Egitto e poi diffuse largamente sulla natura di Cristo in relazione al Padre; in particolare, se egli fosse “nato” dal Padre e così della stessa natura eterna del Padre o se invece, come insegnava Ario, egli fosse stato “creato” e avesse così avuto un inizio nel tempo.. <br>
+								Per contrastare queste eresie, la chiesa comincia a scomunicare gli eretici e per difendere i propri dogmi nel 325 proclama il concilio di Nicea ma questo non basta a fermare le ormai dilaganti eresie e così nel 381 si ha il concilio di Costantinopoli. <br>
+								Giusto per fare chiarezza: per stabilire la questione trinitaria e cristologica ci furono vari concili: <br>
+								<ul>
+												<li>
+																Concilio di Nicea I (325)
+												</li>
+												È stato il primo concilio ecumenico crisriano. <br>
+												Venne convocato e presieduto dall'imperatore Costantino I, il quale intendeva ristabilire la pace religiosa e raggiungere l'unità dogmatica, minata da varie dispute, in particolare sull'arianesimo.
+												<li>
+																Concilio di Costantinopoli I (381)
+												</li>
+												È stato il secondo concilio ecumenico della Chiesa cristiana. <br>
+												
+												<li>
+																Concilio di Efeso I (431)
+												</li>
+												<li>
+																Concilio di Calcedonia (451)
+												</li>
+								</ul>
+								I vescovi
+								</p>
+								</div>
+</body>
+</html>
